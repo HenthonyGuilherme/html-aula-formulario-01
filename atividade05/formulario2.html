@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    
+  
+</head>
+<body>
+    <form action="teste.php" method="POST">
+        <fieldset style="width: 400px;">
+            <legend>formulário</legend>
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" style="width: 250px;"><br>
+            <br>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento"><br>
+            <br>
+            <label for="estadoMoradia">Selecione o estado en que você mora:</label>
+            <br>
+            <div style="float: left;">
+                <select id="estadoMoradia">
+                    <option value="">Estado</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Brasilia">Brasília</option>
+                </select>
+            </div>
+            <div style="float: right;">
+                <label for="genero">Gênero:</label> <br>
+                <input id="feminino" type="radio" name="Gênero" value="Feminino">Feminino<br>
+                <input id="masculino" type="radio" name="Gênero" value="Masculino">Masculino<br>
+                <input id="outros" type="radio" name="Gênero" value="Outros">Outros<br>
+                <br>
+                <input type="submit" value="Salvar" style="float: right;">
+            </div>
+            <br> <br> <br>
+            <div style="display: block;">
+                <label for="conta">5 + 4 é?</label>
+                <input id="conta" name="conta" type="number" style="width: 60px;">
+                <br><br>
+            </div>  
+        </fieldset>
+    </form>
+
+</body>
+</html>
